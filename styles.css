@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Lora:wght@600&family=Poppins:wght@400;500;700&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Arvo", serif;
+}
+
+:root{
+  --mainColor:rgb(254, 42, 42)
+}
+
+body {
+  background:#18181b;
+}
+
+
+header{
+  color: var(--mainColor);
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lime;
+  margin: 1em;
+}
+
+.line{
+  height: 2px;
+  background-color: var(--mainColor);
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--mainColor);
+  width: 100%;
+  font-family: "Arvo", serif;
+  font-size: 7rem;
+  font-weight: 600;
+}
+
+
+
+.container > span{
+  animation: glow 2.5s ease-in-out infinite;
+}
+
+@keyframes glow{
+  0%, 100%{
+    color: #fff;
+    text-shadow: 80px 80px 1px lime, 0 0 50px lime, 0 0 100px lime;
+  }
+  10%, 90%{
+    color: var(--mainColor);
+    text-shadow: none;
+  }
+}
+
+.container span:nth-child(1){
+  animation-delay: 0.25s;
+}
+.container span:nth-child(2){
+  animation-delay: 0.5s;
+  margin-right: 15px;
+}
+.container span:nth-child(3){
+  animation-delay: 0.75s ;
+}
+.container span:nth-child(4){
+  animation-delay: 1s ;
+}
+.container span:nth-child(5){
+  animation-delay: 1.25s ;
+}
+.container span:nth-child(6){
+  animation-delay:1.5s ;
+  margin-right: 15px;
+}
+.container span:nth-child(7){
+  animation-delay:1.75s;
+}
+.container span:nth-child(8){
+  animation-delay:2s;
+}
+.container span:nth-child(9){
+  animation-delay:2.25s ;
+}
+.container span:nth-child(10){
+  animation-delay:2.5s ;}
+
+
+
+
+  
+  
+  
